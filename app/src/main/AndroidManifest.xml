@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.pro.foodorder">
+    package="com.thanhloi.nomstop">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE"/>
@@ -17,7 +21,7 @@
     </queries>
 
     <application
-        android:name="com.pro.foodorder.ControllerApplication"
+        android:name="com.thanhloi.nomstop.ControllerApplication"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -25,7 +29,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
         android:theme="@style/AppTheme">
-        <activity android:name="com.pro.foodorder.activity.SplashActivity"
+        <activity android:name="com.thanhloi.nomstop.activity.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -34,34 +38,34 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.pro.foodorder.activity.MainActivity"
+            android:name="com.thanhloi.nomstop.activity.MainActivity"
             android:exported="false"/>
         <activity
-            android:name="com.pro.foodorder.activity.FoodDetailActivity"
+            android:name="com.thanhloi.nomstop.activity.FoodDetailActivity"
             android:exported="false"/>
         <activity
-            android:name="com.pro.foodorder.activity.SignUpActivity"
+            android:name="com.thanhloi.nomstop.activity.SignUpActivity"
             android:exported="false"/>
         <activity
-            android:name="com.pro.foodorder.activity.SignInActivity"
+            android:name="com.thanhloi.nomstop.activity.SignInActivity"
             android:exported="false"/>
         <activity
-            android:name="com.pro.foodorder.activity.ForgotPasswordActivity"
+            android:name="com.thanhloi.nomstop.activity.ForgotPasswordActivity"
             android:exported="false"/>
         <activity
-            android:name="com.pro.foodorder.activity.ChangePasswordActivity"
+            android:name="com.thanhloi.nomstop.activity.ChangePasswordActivity"
             android:exported="false"/>
         <activity
-            android:name="com.pro.foodorder.activity.AdminMainActivity"
+            android:name="com.thanhloi.nomstop.activity.AdminMainActivity"
             android:exported="false"/>
         <activity
-            android:name="com.pro.foodorder.activity.OrderHistoryActivity"
+            android:name="com.thanhloi.nomstop.activity.OrderHistoryActivity"
             android:exported="false"/>
         <activity
-            android:name="com.pro.foodorder.activity.AddFoodActivity"
+            android:name="com.thanhloi.nomstop.activity.AddFoodActivity"
             android:exported="false"/>
         <activity
-            android:name="com.pro.foodorder.activity.AdminReportActivity"
+            android:name="com.thanhloi.nomstop.activity.AdminReportActivity"
             android:exported="false"/>
     </application>
 

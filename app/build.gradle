@@ -8,7 +8,7 @@ android {
     buildToolsVersion "30.0.0"
 
     defaultConfig {
-        applicationId "com.pro.foodorder"
+        applicationId 'com.thanhloi.nomstop'
         minSdkVersion 21
         targetSdkVersion 31
         versionCode 1
