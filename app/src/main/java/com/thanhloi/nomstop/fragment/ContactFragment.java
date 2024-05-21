@@ -39,7 +39,6 @@ public class ContactFragment extends BaseFragment {
     }
 
     private void initUi() {
-        mFragmentContactBinding.tvAboutUsTitle.setText(AboutUsConfig.ABOUT_US_TITLE);
         mFragmentContactBinding.tvAboutUsContent.setText(AboutUsConfig.ABOUT_US_CONTENT);
         mFragmentContactBinding.tvAboutUsWebsite.setText(AboutUsConfig.ABOUT_US_WEBSITE_TITLE);
 
@@ -62,9 +61,7 @@ public class ContactFragment extends BaseFragment {
         contactArrayList.add(new Contact(Contact.FACEBOOK, R.drawable.ic_facebook));
         contactArrayList.add(new Contact(Contact.HOTLINE, R.drawable.ic_hotline));
         contactArrayList.add(new Contact(Contact.GMAIL, R.drawable.ic_gmail));
-        contactArrayList.add(new Contact(Contact.SKYPE, R.drawable.ic_skype));
-        contactArrayList.add(new Contact(Contact.YOUTUBE, R.drawable.ic_youtube));
-        contactArrayList.add(new Contact(Contact.ZALO, R.drawable.ic_zalo));
+
 
         return contactArrayList;
     }

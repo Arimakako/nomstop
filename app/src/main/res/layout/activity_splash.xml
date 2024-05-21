@@ -30,35 +30,37 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/app_name"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/text_size_large" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/define_dimen_10">
+
+            <TextView
+                android:id="@+id/tv_about_us_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_bold"
                 android:textColor="@color/white"
-                android:textSize="@dimen/text_size_large"
-                android:text="@string/app_name"/>
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/tv_about_us_slogan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/define_dimen_10"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_xsmall" />
         </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/layout_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:padding="@dimen/define_dimen_10">
-
-        <TextView
-            android:id="@+id/tv_about_us_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/white"
-            android:textSize="@dimen/text_size_small" />
-
-        <TextView
-            android:id="@+id/tv_about_us_slogan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginBottom="@dimen/define_dimen_10"
-            android:textColor="@color/white"
-            android:textSize="@dimen/text_size_xsmall" />
-    </LinearLayout>
 </RelativeLayout>

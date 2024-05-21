@@ -19,13 +19,7 @@
             android:src="@drawable/img_splash"
             tools:srcCompat="@tools:sample/avatars" />
 
-        <TextView
-            android:id="@+id/tv_about_us_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/define_dimen_10"
-            android:textColor="@color/colorPrimary"
-            android:textSize="@dimen/text_size_xnormal" />
+
 
         <TextView
             android:id="@+id/tv_about_us_content"

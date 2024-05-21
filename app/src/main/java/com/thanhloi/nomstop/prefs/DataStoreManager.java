@@ -11,6 +11,7 @@ import com.thanhloi.nomstop.utils.StringUtil;
 public class DataStoreManager {
 
     public static final String PREF_USER_INFOR = "PREF_USER_INFOR";
+    private static final String PREF_LANGUAGE = "PREF_LANGUAGE"; // Thêm dòng này
 
     private static DataStoreManager instance;
     private MySharedPreferences sharedPreferences;
@@ -42,5 +43,13 @@ public class DataStoreManager {
             return new Gson().fromJson(jsonUser, User.class);
         }
         return new User();
+    }
+
+    public static void setLanguage(String language) { // Thêm phương thức này
+        DataStoreManager.getInstance().sharedPreferences.putStringValue(PREF_LANGUAGE, language);
+    }
+
+    public static String getLanguage() { // Thêm phương thức này
+        return DataStoreManager.getInstance().sharedPreferences.getStringValue(PREF_LANGUAGE, "en");
     }
 }
